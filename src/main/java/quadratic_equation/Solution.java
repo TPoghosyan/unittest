@@ -7,10 +7,10 @@ public class Solution {
     public double[] solve(double a, double b, double c) {
         double[] array = new double[2];
         double determinant = b * b - 4.0 * a * c;
-        /*if (a==0 && b==0 && c==0){
+        if (a==0 && b==0 && c==0){
              array[0] = Double.POSITIVE_INFINITY;
             array[1] = Double.NEGATIVE_INFINITY;
-           return array;}*/
+           return array;}
         if (a != 0) {
             if (determinant > 0.0) {
                 array[1] = (-b + Math.sqrt(determinant)) / (2.0 * a);
